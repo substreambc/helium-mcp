@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "description": "Machine-first MCP for the SNTL Helium/Solana DePIN threat & anomaly datalake. Pay-per-call via x402 on Solana. First tier free. No signup, no key.",
   "type": "module",
+  "author": "Web3 Solutions, LLC",
+  "license": "UNLICENSED",
   "bin": { "sntl-helium-mcp": "src/server.mjs" },
-  "files": ["src", "schema"],
+  "files": ["src", "mcp.json", ".well-known", "schema"],
   "engines": { "node": ">=20" },
   "keywords": ["mcp", "x402", "solana", "helium", "depin", "threat-intel", "anomaly", "a2a", "agent", "m2m"],
   "dependencies": {

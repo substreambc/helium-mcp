@@ -1,0 +1,23 @@
+{
+  "name": "SNTL Helium Intelligence (MCP)",
+  "description": "Pay-per-call Helium/Solana DePIN threat & anomaly intelligence. 285k AI-graded events + 233k causal chains. x402 on Solana, first tier free, no signup/key.",
+  "version": "0.1.0",
+  "protocol": ["mcp", "x402", "a2a"],
+  "url": "https://a2a.sntl.site",
+  "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+  "treasury": "DDxMHJceaNE9tWohpauakaek8Q7P7CJ2jkzhiHRybCmt",
+  "mcp": { "package": "@sntl/helium-mcp", "transport": "stdio", "command": "npx -y @sntl/helium-mcp" },
+  "pricing": { "model": "pay-per-call", "free_tier": true, "unit_usdc": 0.01, "premium_usdc": 0.05 },
+  "tools": [
+    { "name": "helium_ledger", "price_usdc": 0 },
+    { "name": "helium_stats", "price_usdc": 0.01 },
+    { "name": "helium_query", "price_usdc": 0.01 },
+    { "name": "helium_threats", "price_usdc": 0.01 },
+    { "name": "helium_anomalies", "price_usdc": 0.01 },
+    { "name": "helium_event", "price_usdc": 0.01 },
+    { "name": "helium_chronicle", "price_usdc": 0.05 },
+    { "name": "helium_escalation", "price_usdc": 0.05 },
+    { "name": "helium_geo", "price_usdc": 0.05 },
+    { "name": "helium_wallets", "price_usdc": 0.05 }
+  ]
+}
