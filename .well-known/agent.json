@@ -6,7 +6,7 @@
   "url": "https://a2a.sntl.site",
   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
   "treasury": "DDxMHJceaNE9tWohpauakaek8Q7P7CJ2jkzhiHRybCmt",
-  "mcp": { "package": "@sntl/helium-mcp", "transport": "stdio", "command": "npx -y @sntl/helium-mcp" },
+  "mcp": { "package": "@web3solutions33/helium-mcp", "transport": "stdio", "command": "npx -y @web3solutions33/helium-mcp" },
   "pricing": { "model": "pay-per-call", "free_tier": true, "unit_usdc": 0.01, "premium_usdc": 0.05 },
   "tools": [
     { "name": "helium_ledger", "price_usdc": 0 },

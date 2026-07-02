@@ -1,4 +1,4 @@
-# @sntl/helium-mcp
+# @web3solutions33/helium-mcp
 
 Machine-first MCP for the **SNTL Helium/Solana DePIN threat & anomaly datalake**.
 Pay-per-call via **x402 on Solana**. First tier free. No signup, no key. The protocol is the UI.
