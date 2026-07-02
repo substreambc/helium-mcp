@@ -1,0 +1,17 @@
+{
+  "name": "sntl-helium",
+  "displayName": "SNTL Helium Intelligence",
+  "description": "Pay-per-call Helium/Solana DePIN threat & anomaly intelligence over 285k AI-graded events + 233k causal chains. x402 on Solana. First tier free, no signup, no key.",
+  "version": "0.1.0",
+  "transport": "stdio",
+  "command": "npx",
+  "args": ["-y", "@sntl/helium-mcp"],
+  "env": {
+    "WALLET_ENV": { "description": "BYO Solana secret key (base58 or JSON) for paid tools", "required": false },
+    "SNTL_BASE": { "description": "rail base URL", "required": false },
+    "RPC_URL": { "description": "Solana RPC endpoint", "required": false },
+    "MAX_USDC_PER_CALL": { "description": "hard spend cap per call", "required": false }
+  },
+  "homepage": "https://a2a.sntl.site",
+  "keywords": ["helium", "solana", "depin", "threat-intel", "anomaly", "x402", "a2a", "m2m", "mcp"]
+}
