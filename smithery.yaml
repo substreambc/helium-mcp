@@ -1,0 +1,33 @@
+# Smithery launch config — stdio MCP server via npx.
+# Free tools need no config; paid tools need a BYO Solana wallet (walletEnv). We custody nothing.
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      walletEnv:
+        type: string
+        description: BYO Solana secret key (base58 or JSON byte-array) for paid tools. Free tools (helium_ledger) work without it. We custody nothing — the caller's wallet pays.
+      sntlBase:
+        type: string
+        description: Rail base URL.
+        default: https://a2a.sntl.site
+      rpcUrl:
+        type: string
+        description: Solana RPC endpoint.
+        default: https://api.mainnet-beta.solana.com
+      maxUsdcPerCall:
+        type: number
+        description: Hard spend cap per call, in USDC.
+        default: 1
+  commandFunction: |-
+    (config) => ({
+      command: 'npx',
+      args: ['-y', '@web3solutions33/helium-mcp'],
+      env: {
+        WALLET_ENV: config.walletEnv || '',
+        SNTL_BASE: config.sntlBase || 'https://a2a.sntl.site',
+        RPC_URL: config.rpcUrl || 'https://api.mainnet-beta.solana.com',
+        MAX_USDC_PER_CALL: config.maxUsdcPerCall != null ? String(config.maxUsdcPerCall) : '1'
+      }
+    })
