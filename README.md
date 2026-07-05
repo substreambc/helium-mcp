@@ -26,4 +26,4 @@ npm i && node src/server.mjs
 Paid tools settle x402 → PayAI facilitator → treasury. **We custody nothing** — the caller's wallet pays.
 
 ## Data
-285k AI-graded enriched events · 233k causal chains · 12 Helium program shards · wallet/geo/LLM-verdict intel.
+600K+ on-chain events, 285k AI-graded · 233k causal chains · 12 Helium program shards · wallet/geo/LLM-verdict intel.
