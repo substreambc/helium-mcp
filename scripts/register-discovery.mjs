@@ -11,8 +11,8 @@ const REGISTRY_URL = process.env.A2A_REGISTRY_URL || 'https://a2a-registry.org/a
 const body = {
   name: agentCard.name,
   description: agentCard.description,
-  manifest_url: 'https://a2a.sntl.site/.well-known/agent-card.json',
-  openapi_url: 'https://a2a.sntl.site',
+  manifest_url: 'https://pop-os.tail08831d.ts.net/.well-known/agent-card.json',
+  openapi_url: 'https://pop-os.tail08831d.ts.net',
   version: pkg.version,
   category: 'Data',
   target_audience: 'Developers',
