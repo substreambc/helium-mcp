@@ -5,7 +5,7 @@
   "protocol": ["mcp-stateless-2026-07-28", "mcp-stdio-2025-11-25", "x402-v2", "a2a-v2"],
   "url": "https://pop-os.tail08831d.ts.net",
   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
-  "treasury": "DDxMHJceaNE9tWohpauakaek8Q7P7CJ2jkzhiHRybCmt",
+  "treasury": "77jDxfGUbCUbJCRZfrmXcjQ2kT7MHe4oQ3ZUBzncBXCp",
   "mcp": { "package": "@web3solutions33/helium-mcp", "transport": "stdio", "command": "npx -y @web3solutions33/helium-mcp" },
   "pricing": { "model": "pay-per-call", "free_tier": true, "unit_usdc": 0.01, "premium_usdc": 0.05 },
   "tools": [
