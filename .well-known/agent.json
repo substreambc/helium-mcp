@@ -19,5 +19,14 @@
     { "name": "helium_escalation", "price_usdc": 0.05 },
     { "name": "helium_geo", "price_usdc": 0.05 },
     { "name": "helium_wallets", "price_usdc": 0.05 }
+  ],
+  "related_agents": [
+    {
+      "name": "SNTL Real-time Helium & Geo-spatial Intelligence",
+      "relation": "same-rail",
+      "description": "A2A agent card for the same Helium/Solana DePIN datalake. 26 skills, x402-metered, two free probes.",
+      "url": "https://github.com/substreambc/my-agent",
+      "agent_card": "https://pop-os.tail08831d.ts.net/.well-known/agent-card.json"
+    }
   ]
 }
