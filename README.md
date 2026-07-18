@@ -12,3 +12,28 @@ Model Context Protocol (MCP `2026-07-28` RC & `2025-11-25` stateless schema) ser
 
 ```bash
 yarn dlx @web3solutions33/helium-mcp
+```
+
+## Usage
+
+```bash
+# Install and run
+ yarn dlx @web3solutions33/helium-mcp
+
+# In your MCP client, call a tool:
+# Tool: helium_ledger (FREE)
+# Tool: helium_events ($0.01 USDC/call)
+```
+
+## Example Response
+
+```json
+{
+  "data": [...],
+  "_receipt": {
+    "payer": "77jDxfG...",
+    "price_usdc": 0.01,
+    "x_payment_response": {...}
+  }
+}
+```
