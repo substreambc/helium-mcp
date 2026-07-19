@@ -135,6 +135,20 @@ Caller's Wallet → YOUR Treasury (USDC)
 
 ---
 
+## ON-CHAIN PROOF OF CONCEPT
+
+**Wallet:** `DDxMHJceaNE9tWohpauakaek8Q7P7CJ2jkzhiHRybCmt`
+
+**Sample transaction:** `4BUUzJ3keZ8Mkg97nm3HMHdwoiLfGDAJdK4AyqgnpBrsk1DgA8Rdg7q4JavaeYBZdQDoXktNc9Mk3Tj1NK3ZPKHt`
+
+This wallet has executed **over 40 on-chain transactions** where **PayAI acts as the fee payer facilitator** for A2A payments. Each transaction represents a paying agent using this x402-metered MCP pattern.
+
+**Verify on Solana Explorer:**
+- [Main transaction](https://explorer.solana.com/tx/4BUUzJ3keZ8Mkg97nm3HMHdwoiLfGDAJdK4AyqgnpBrsk1DgA8Rdg7q4JavaeYBZdQDoXktNc9Mk3Tj1NK3ZPKHt)
+- [Wallet activity](https://explorer.solana.com/address/DDxMHJceaNE9tWohpauakaek8Q7P7CJ2jkzhiHRybCmt)
+
+---
+
 ## What the caller sees
 
 ### Free tools
