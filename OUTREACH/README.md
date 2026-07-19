@@ -4,17 +4,19 @@
 
 ---
 
-## 📋 Available Templates
+## ud83d\udccb Available Templates
 
 | Target Project | File | Data Type | Status |
 |----------------|------|-----------|--------|
-| **Render Network** | [render_issue.md](render_issue.md) | GPU Rendering | ⏳ Ready to file |
-| **Silent Data** | [silentdata_issue.md](silentdata_issue.md) | Wireless Network | ⏳ Ready to file |
-| **Dymension** | [dymension_issue.md](dymension_issue.md) | RollApp Data | ⏳ Ready to file |
+| **Hivemapper** | [hivemapper_issue.md](hivemapper_issue.md) | Geospatial Mapping | ud83c\udfaf Ready to file |
+| **Jupiter** | [jupiter_issue.md](jupiter_issue.md) | DEX Aggregator Data | ud83c\udfaf Ready to file |
+| **Render Network** | [render_issue.md](render_issue.md) | GPU Rendering | ud83c\udfaf Ready to file |
+| **Silent Data** | [silentdata_issue.md](silentdata_issue.md) | Wireless Network | ud83c\udfaf Ready to file |
+| **Dymension** | [dymension_issue.md](dymension_issue.md) | RollApp Data | ud83c\udfaf Ready to file |
 
 ---
 
-## 🎯 How to Use These Templates
+## ud83c\udfaf How to Use These Templates
 
 ### For GitHub Issues:
 1. Navigate to the target repository on GitHub
@@ -29,7 +31,7 @@ Each template includes:
 - **Title**: Clear proposal title
 - **Introduction**: Why their data is valuable
 - **MCP x402 Benefits**: 4 key value propositions
-- **Proof**: Reference to helium-mcp (2M+ records, 93 tables)
+- **Proof**: Reference to helium-mcp (2M+ records, 93 tables) with on-chain tx
 - **Implementation**: 4 simple steps
 - **Technical Spec**: MCP compliance, x402 version, pricing
 - **Use Case**: Specific application for their data
@@ -38,7 +40,7 @@ Each template includes:
 
 ---
 
-## 📊 Outreach Tracking
+## ud83d\udcca Outreach Tracking
 
 Track all outreach activities in:
 - [ECOSYSTEM.md](../ECOSYSTEM.md) - Complete ecosystem overview
@@ -46,7 +48,7 @@ Track all outreach activities in:
 
 ---
 
-## 🔄 Customization Tips
+## ud83d\udd04 Customization Tips
 
 When filing issues:
 
@@ -58,7 +60,7 @@ When filing issues:
 
 ---
 
-## 📝 Example Customization
+## ud83d\udcdd Example Customization
 
 For a storage-focused DePIN project, you might modify:
 
@@ -78,9 +80,9 @@ We've implemented this pattern for Helium network data (2M+ records, 93 tables).
 
 ---
 
-## 🎯 Next Steps
+## ud83c\udfaf Next Steps
 
-1. **File the 3 ready templates** on their respective repositories
+1. **File the 5 ready templates** on their respective repositories
 2. **Track responses** in [ECOSYSTEM.md](../ECOSYSTEM.md)
 3. **Follow up** after 7-10 days if no response
 4. **Add new templates** for additional targets from [ECOSYSTEM.md](../ECOSYSTEM.md)
