@@ -1,51 +1,107 @@
-# SNTL Helium MCP — Agent Guide
+# Agent Integration Guide
 
-This MCP server gives any AI agent **pay-per-call access** to the SNTL Helium/Solana DePIN threat & anomaly datalake. 285k AI-graded events, 233k causal chains, 12 program shards.
+**How agents use your x402-metered MCP server to pay for your data.**
+
+---
 
 ## Quick Install
 
+### Claude Desktop
 ```json
 // claude_desktop_config.json
 {
   "mcpServers": {
-    "sntl-helium": {
+    "your-server": {
       "command": "npx",
-      "args": ["-y", "@web3solutions33/helium-mcp"]
+      "args": ["-y", "@your-scope/your-mcp"]
     }
   }
 }
 ```
 
-## Tools
+### Any stdio MCP host
+```bash
+npx -y @your-scope/your-mcp
+```
 
-| Tool | Price | What it does |
-|------|-------|-------------|
-| `helium_ledger` | FREE | Wallet's x402 payment + query history |
-| `helium_stats` | $0.01 | Live event counts by threat tier |
-| `helium_query` | $0.01 | SQL SELECT over 285k enriched events |
-| `helium_threats` | $0.01 | Events at a threat tier (critical/high/medium/low/pending) |
-| `helium_anomalies` | $0.01 | Highest anomaly-score events |
-| `helium_event` | $0.01 | Single event by transaction_id |
-| `helium_chronicle` | $0.05 | Causal chains — world-state reconstruction |
-| `helium_escalation` | $0.05 | LLM verdict trail (SLM→LLM) |
-| `helium_geo` | $0.05 | H3 geospatial hotspot resolution |
-| `helium_wallets` | $0.05 | Scored wallet audience pools |
+---
 
-## Wallet
+## How agents call your tools
 
-Free tools work without a wallet. Paid tools settle via **x402 on Solana** — your wallet pays USDC directly to the SNTL treasury. No signup, no API key.
+### Free tools (no wallet required)
+```
+Agent calls: your_free_tool(param: "value")
+Returns: { data: {...} }
+```
 
-Set `WALLET_ENV` to your Solana secret key (base58 or JSON byte-array).
+### Paid tools (caller pays you)
+```
+Agent calls: your_paid_tool(query: "SELECT * FROM my_data")
+Returns: {
+  data: {...},
+  _receipt: {
+    payer: "AgentWalletAddress",
+    price_usdc: 0.01,
+    x_payment_response: "SolanaTxHash..."
+  }
+}
+```
 
-## Examples
+---
+
+## What the agent needs to set
+
+```bash
+# Required for paid tools only
+WALLET_ENV=their_solana_secret_key
+
+# Optional overrides
+SNTL_BASE=https://your-api.example.com
+RPC_URL=https://api.mainnet-beta.solana.com
+MAX_USDC_PER_CALL=1
+```
+
+**Note:** Agents set `WALLET_ENV` with **their own** funded Solana wallet. You never see their key. They pay your treasury directly via x402.
+
+---
+
+## Example conversation flow
 
 ```
-User: "Show me critical threats"
-Agent: [calls helium_threats(tier: "critical", limit: 10)]
+User: "Give me the latest data"
+Agent: [calls your_paid_tool(query: "latest")]
+      [x402 triggers: agent's wallet pays YOUR treasury]
+      [returns data + on-chain receipt]
+Agent: "Here's your data. Transaction proof: SolanaTxHash..."
 
-User: "What's the anomaly score on tx 5g3h5ttVtJQs8VBbeVDqdR8xvBobERBWqqmQhK9MJWfKyhtgzKndyfHdhovYSUtCGyVxSeV?"
-Agent: [calls helium_event(transaction_id: "...")]
-
-User: "Run SELECT count(*) FROM enriched_events_base WHERE threat_assessment = 'critical'"
-Agent: [calls helium_query(sql: "...")]
+User: "Show me free sample"
+Agent: [calls your_free_tool(param: "sample")]
+      [returns data immediately, no payment]
+Agent: "Here's a free sample"
 ```
+
+---
+
+## For agent developers
+
+1. **Install** the MCP server in your agent's environment
+2. **Configure** `WALLET_ENV` with a funded Solana wallet (USDC)
+3. **Call** tools via the MCP client
+4. **Receive** on-chain receipts for every paid call
+
+**That's it.** No API keys. No signup. No custody.
+
+---
+
+## Troubleshooting
+
+| Issue | Fix |
+|-------|-----|
+| Paid tool fails with "WALLET_ENV not set" | Agent needs to set their Solana secret key |
+| Paid tool fails with "insufficient funds" | Agent needs USDC in their wallet |
+| Free tool returns 404 | Check your `SNTL_BASE` URL in config |
+| Tool not found | Verify tool name in your `registry.mjs` |
+
+---
+
+**Pattern by [Web3 Solutions, LLC](https://sntl.site)** — Copy it. Use it. Profit.
