@@ -1,5 +1,5 @@
 <!-- ~/sentinel/opencode/dsv4/helium-mcp/README.md -->
-# helium-mcp complete pattern
+# helium-mcp complete mcp pattern for monetization of your blockchain data 
 
 ![MIT](https://img.shields.io/badge/license-MIT-46C8A6) ![pay x402](https://img.shields.io/badge/pay-x402-E8B04B) ![Solana](https://img.shields.io/badge/Solana-mainnet-14F195)
 
