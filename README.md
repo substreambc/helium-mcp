@@ -266,7 +266,7 @@ helium-mcp/
 
 ---
 
-## Don't overthink it
+## Ship 
 
 1. **Define your tools** in `registry.mjs`
 2. **Wire your data** in `rail.mjs`
