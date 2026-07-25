@@ -104,4 +104,4 @@ Agent: "Here's a free sample"
 
 ---
 
-**Pattern by [Web3 Solutions, LLC](https://sntl.site)** — Copy it. Use it. Profit.
+**Pattern by [Web3 Solutions, LLC](https://sntl.site)** 
