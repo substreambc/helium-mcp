@@ -7,19 +7,21 @@
 **A reference implementation: drop this MCP into any host and charge per-call for your own data.**
 
 ---
+# The Serverless Solana A2A Pattern
+
+This is an open-source framework for monetizing your data on Solana. If you have a valuable API, this pattern allows you to start collecting on-chain USDC payments per query in under an hour, with no signups, no API keys, and no backend complexity.
+
+It is the fastest path from data to on-chain revenue. This repository is the foundation for the SNTL DePIN Integrity Oracle, a production-grade Trust-as-a-Service API.
+
+### Features
+- **Pay-per-query:** On-chain USDC payments via the x402 protocol.
+- **Stateless & Scalable:** No databases or servers to manage.
+- **Machine-Readable by Design:** Auto-generates `agent-card.json` and other manifests for discovery by autonomous agents.
+- **Teaches Best Practices:** Demonstrates value-based pricing and real-time streaming capabilities for building a sustainable data business.
 
 ## What this is
 
 This is a **clean, minimal pattern** for building an MCP server that meters API calls via **x402 on Solana**. You plug in your data source, set your prices, and users pay you per-call with on-chain receipts.
-
-**You control:**
-- What data you serve
-- What you charge per call
-- Who pays (their wallet, not yours)
-
-**We control:** Nothing. This is your code, your data, your money.
-
----
 
 ## The pattern in 3 files
 
