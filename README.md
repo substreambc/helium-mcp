@@ -3,15 +3,9 @@
 ![alt text](https://img.shields.io/badge/pay-x402-E8B04B)
 
 ![alt text](https://img.shields.io/badge/Solana-mainnet-14F195)
+
 The fastest path from data to on-chain revenue. A production-grade framework for building an autonomous, machine-payable data business on Solana.
-The Serverless Solana A2A Pattern
-This is an open-source framework for monetizing your data on Solana. If you have a valuable API, this pattern allows you to start collecting on-chain USDC payments per query in under an hour, with no signups, no API keys, and no backend complexity.
-It is the definitive pattern for building a modern Data-as-a-Service (DAAS) business in Web3. This repository is the open-source foundation for the SNTL DePIN Integrity Oracle, a production-grade Trust-as-a-Service API that uses this exact architecture to solve the multi-million dollar Sybil problem for networks like Helium.
-Features
-Pay-per-query: On-chain USDC payments via the elegant x402 protocol.
-Serverless & Infinitely Scalable: Deploy globally on Cloudflare. No databases or servers to manage.
-Machine-Readable by Design: Auto-generates agent-card.json and other manifests for discovery by autonomous agents.
-Teaches Best Practices: Demonstrates value-based pricing and real-time streaming capabilities for building a sustainable data business.
+
 Why This Matters: The Multi-Million Dollar Sybil Problem
 DePIN networks like Helium rely on a physical ground truth: that their hardware is where its operator claims it is. "Sybil attacks," where fraudulent operators cluster hardware in one location while asserting it across a wide area, undermine the economic and physical integrity of the entire network. This erodes trust and costs honest participants millions in lost rewards.
 The SNTL v4 engine was built to solve this. By fusing a network's on-chain data with independent, real-world data from other protocols (like Hivemapper), we can now prove reality. This MCP pattern is the tool we use to sell that truth.
