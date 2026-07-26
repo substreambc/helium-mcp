@@ -1,17 +1,43 @@
 {
-  "name": "sntl-helium",
-  "displayName": "SNTL Helium Intelligence",
-  "description": "Model Context Protocol (MCP 2026-07-28 RC & 2025-11-25 stateless schema) server for Helium/Solana DePIN threat & anomaly intelligence over 2,048,427 verified live records across 93 tables. Metered via HTTP 402 (x402Version: 2) on Solana Mainnet ($0.01 USDC). First tier free, zero registration.",
-  "version": "0.1.0",
+  "name": "sntl-depin",
+  "displayName": "SNTL DePIN Oracle",
+  "description": "Model Context Protocol (MCP 2026-07-28 RC & 2025-11-25 stateless schema) server for DePIN RF telemetry, spatial heuristics, and threat intelligence. Exposes deterministic physics validation over 724k+ live records. Metered via HTTP 402 (x402Version: 2) on Solana Mainnet with tiered pay-per-record pricing ($0.01 - $1.00 USDC). Strict LIMIT 1 enforced. First tier free, zero registration.",
+  "version": "4.0.0",
   "transport": "stdio",
   "command": "npx",
   "args": ["-y", "@web3solutions33/helium-mcp"],
   "env": {
-    "WALLET_ENV": { "description": "BYO Solana secret key (base58 or JSON) for paid tools", "required": false },
-    "SNTL_BASE": { "description": "rail base URL", "required": false },
-    "RPC_URL": { "description": "Solana RPC endpoint", "required": false },
-    "MAX_USDC_PER_CALL": { "description": "hard spend cap per call", "required": false }
+    "WALLET_ENV": { 
+      "description": "BYO Solana secret key (base58 or JSON) for paid tools", 
+      "required": false 
+    },
+    "SNTL_BASE": { 
+      "description": "rail base URL", 
+      "required": false 
+    },
+    "RPC_URL": { 
+      "description": "Solana RPC endpoint", 
+      "required": false 
+    },
+    "MAX_USDC_PER_CALL": { 
+      "description": "hard spend cap per call (must be >= 1.00 to access Tier 1 RF/Critical tools)", 
+      "required": false 
+    }
   },
   "homepage": "https://pop-os.tail08831d.ts.net",
-  "keywords": ["helium", "solana", "depin", "threat-intel", "anomaly", "x402", "a2a", "m2m", "mcp"]
+  "keywords": [
+    "helium", 
+    "hivemapper", 
+    "solana", 
+    "depin", 
+    "rf-telemetry", 
+    "spatial-heuristics", 
+    "physics-validation",
+    "threat-intel", 
+    "anomaly", 
+    "x402", 
+    "a2a", 
+    "m2m", 
+    "mcp"
+  ]
 }
