@@ -1,4 +1,4 @@
-# SNTL DePIN RF Telemetry & Yield Loss MCP
+# SNTL DePIN Oracle MCP
 
 > Model Context Protocol server for DePIN RF telemetry, spatial heuristics, and threat intelligence.
 
