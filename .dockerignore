@@ -1,0 +1,10 @@
+node_modules
+.env
+.env.*
+!.env.example
+test/
+docs/
+scripts/
+.git
+.gitignore
+*.md

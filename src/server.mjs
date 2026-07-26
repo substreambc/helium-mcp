@@ -1,5 +1,7 @@
 #!/usr/bin/env node
-// server.mjs — the MCP face. Auto-generates one tool per registry entry. No UI: the protocol is the UI.
+/////////////// sentinel/a2a/src/server.mjs 
+/////////////////NOTE: DO NOT TOUCH rail.ts////////////
+//— the MCP face. Auto-generates one tool per registry entry. No UI: the protocol is the UI.
 // Free tools run open; paid tools settle x402 (BYO wallet) and return an on-chain receipt.
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
@@ -24,5 +26,34 @@ for (const t of TOOLS) {
     }
   });
 }
+
+// 📢 HUMAN UX: Print instructions to stderr (ignored by MCP protocol, visible to humans)
+console.error(`
+===================================================================
+🥷 SNTL Helium MCP Server is LIVE (Machine-to-Machine Mode)
+===================================================================
+⚠️  If you are a human reading this, the server is waiting for 
+    an AI client to speak to it via stdio. 
+    
+    THIS BLINKING CURSOR IS EXPECTED BEHAVIOR.
+
+🛠️  NEXT STEPS FOR HUMANS:
+    Do not run this directly in your terminal. Add this exact 
+    configuration to your AI client (e.g., Claude Desktop config):
+
+    "mcpServers": {
+      "helium-x402": {
+        "command": "yarn",
+        "args": ["dlx", "@web3solutions33/helium-mcp"],
+        "env": {
+          "WALLET_ENV": "<YOUR_SOLANA_PRIVATE_KEY_BASE58_OR_JSON>"
+        }
+      }
+    }
+
+    Once added, restart your AI client. It will boot this process 
+    silently in the background and negotiate the x402 payments.
+===================================================================
+`);
 
 await server.connect(new StdioServerTransport());

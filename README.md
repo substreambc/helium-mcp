@@ -8,7 +8,31 @@ Machine-first MCP for the **SNTL Helium × Solana DePIN intelligence datalake** 
 
 > An open (MIT) reference implementation of an **x402-metered MCP tool** on Solana — reuse the pattern for your own agent commerce.
 
-## One-liner
+## 
 
 ```bash
+// dlx is yarns version of npm npx 
 yarn dlx @web3solutions33/helium-mcp
+     you end with a blinking cursor to the human eye, we are injecting the err with human output for instructions 
+/////////////////////////////////////////////
+//HUMAN READABLE INSTALL - this was my exact install: 
+/////////////////////////////////////////////
+## 🔌 Installation (Machine-to-Machine)
+
+This is an MCP server designed to be run by an AI agent. **Do not run this directly in your terminal.** 
+
+Instead, add this exact configuration to your AI client (e.g., `claude_desktop_config.json`):
+
+\`\`\`json
+{
+  "mcpServers": {
+    "helium-x402": {
+      "command": "yarn",
+      "args": ["dlx", "@web3solutions33/helium-mcp"]
+    }
+  }
+}
+\`\`\`
+
+Restart your AI client. 
+The agent will automatically boot the server, generate an ephemeral Solana identity, and negotiate x402 payments silently in the background.
