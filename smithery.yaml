@@ -11,7 +11,7 @@ startCommand:
       sntlBase:
         type: string
         description: Rail base URL.
-        default: https://a2a.sntl.site
+        default: https://pop-os.tail08831d.ts.net
       rpcUrl:
         type: string
         description: Solana RPC endpoint.
@@ -26,7 +26,7 @@ startCommand:
       args: ['-y', '@web3solutions33/helium-mcp'],
       env: {
         WALLET_ENV: config.walletEnv || '',
-        SNTL_BASE: config.sntlBase || 'https://a2a.sntl.site',
+        SNTL_BASE: config.sntlBase || 'https://pop-os.tail08831d.ts.net',
         RPC_URL: config.rpcUrl || 'https://api.mainnet-beta.solana.com',
         MAX_USDC_PER_CALL: config.maxUsdcPerCall != null ? String(config.maxUsdcPerCall) : '1'
       }

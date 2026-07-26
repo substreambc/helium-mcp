@@ -36,7 +36,7 @@ const wallet = { publicKey: kp.publicKey, signTransaction: async (t) => { t.sign
 
 const client = createX402Client({ wallet, network: 'solana', rpcUrl: process.env.RPC_URL || 'https://api.mainnet-beta.solana.com', amount: 20000n });
 
-const base = process.env.SNTL_BASE || 'https://a2a.sntl.site';
+const base = process.env.SNTL_BASE || 'https://pop-os.tail08831d.ts.net';
 const endpoints = [
   { name: 'helium_stats (paid)', path: '/api/v2/stats' },
   { name: 'helium_threats/critical (paid)', path: '/api/v2/threats/critical?limit=3' },

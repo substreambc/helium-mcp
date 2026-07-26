@@ -1,7 +1,7 @@
 {
   "name": "sntl-helium",
   "displayName": "SNTL Helium Intelligence",
-  "description": "Pay-per-call Helium/Solana DePIN threat & anomaly intelligence over 285k AI-graded events + 233k causal chains. x402 on Solana. First tier free, no signup, no key.",
+  "description": "Model Context Protocol (MCP 2026-07-28 RC & 2025-11-25 stateless schema) server for Helium/Solana DePIN threat & anomaly intelligence over 2,048,427 verified live records across 93 tables. Metered via HTTP 402 (x402Version: 2) on Solana Mainnet ($0.01 USDC). First tier free, zero registration.",
   "version": "0.1.0",
   "transport": "stdio",
   "command": "npx",
@@ -12,6 +12,6 @@
     "RPC_URL": { "description": "Solana RPC endpoint", "required": false },
     "MAX_USDC_PER_CALL": { "description": "hard spend cap per call", "required": false }
   },
-  "homepage": "https://a2a.sntl.site",
+  "homepage": "https://pop-os.tail08831d.ts.net",
   "keywords": ["helium", "solana", "depin", "threat-intel", "anomaly", "x402", "a2a", "m2m", "mcp"]
 }

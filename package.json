@@ -1,7 +1,7 @@
 {
   "name": "@web3solutions33/helium-mcp",
   "version": "0.1.0",
-  "description": "Machine-first MCP for the SNTL Helium/Solana DePIN threat & anomaly datalake. Pay-per-call via x402 on Solana. First tier free. No signup, no key.",
+  "description": "Model Context Protocol (MCP 2026-07-28 RC & 2025-11-25 stateless schema) server providing programmatic SQL query access over the SNTL Helium × Solana DePIN datalake (2,048,427 live rows across 93 tables). Metered via HTTP 402 (x402Version: 2) on Solana Mainnet. Zero registration.",
   "type": "module",
   "author": "Web3 Solutions, LLC",
   "license": "MIT",
