@@ -11,7 +11,7 @@ Reference implementation for **x402-metered MCP tools**: BYO wallet, strict per-
 
 ---
 
-"We manually validated 60+ M2M transactions on Solana pre-rail. Now it's automated. Run the MCP, point it at our SNTL endpoint, and buy a single $0.01 Lookup Event. If the returned data doesn't match what you see on your own explorer, I'll send you 10x back in USDC. The code is open; the data is verifiable on-chain. You're not trusting me—you're trusting the signature."
+"We manually validated 60+ M2M transactions on Solana pre-rail. Now it's automated. Run the MCP, point it at our SNTL endpoint, and try the FREE TIER. The code is open; the data is verifiable on-chain."
 
 
 ## Table of Contents
