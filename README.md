@@ -4,10 +4,15 @@
 
 Reference implementation for **x402-metered MCP tools**: BYO wallet, strict per-record spend caps, and deterministic on-chain settlement per call.
 
+
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![npm](https://img.shields.io/npm/v/@web3solutions33/helium-mcp)](https://www.npmjs.com/package/@web3solutions33/helium-mcp)
 
 ---
+
+"We manually validated 60+ M2M transactions on Solana pre-rail. Now it's automated. Run the MCP, point it at our SNTL endpoint, and buy a single $0.01 Lookup Event. If the returned data doesn't match what you see on your own explorer, I'll send you 10x back in USDC. The code is open; the data is verifiable on-chain. You're not trusting me—you're trusting the signature."
+
 
 ## Table of Contents
 
