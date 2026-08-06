@@ -11,7 +11,13 @@ Reference implementation for **x402-metered MCP tools**: BYO wallet, strict per-
 
 ---
 
-"We manually validated 60+ M2M transactions on Solana pre-rail. Now it's automated. Run the MCP, point it at our SNTL endpoint, and try the FREE TIER. The code is open; the data is verifiable on-chain."
+
+"We manually validated 60+ M2M transactions on Solana pre-rail. Now it's automated. Run the MCP, point it at our SNTL endpoint, and try the FREE TIER. The code is open; the data is verifiable on-chain DDxMHJceaNE9tWohpauakaek8Q7P7CJ2jkzhiHRybCmt - original treausury." 
+
+PayAI Facilitator 
+
+
+https://explorer.solana.com/tx/2TEnsbpuxLC3qsCLAf4MB2XfUbr2SF4B34vjpkV1Yzq2BeDqVuTzmEo6UX3SXFDkKRWMYtbSJ6K8GcuNZt7J939c 
 
 
 ## Table of Contents
